@@ -30,3 +30,13 @@ tested on php 8.3 previous versions work too
 ?>
 
 ```
+
+# htaccess file
+
+make sure this is included in your .htaccess file
+```htaccess
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+```
