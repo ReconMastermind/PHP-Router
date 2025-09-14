@@ -1,4 +1,6 @@
-<?php 
+<?php
+	//Example
+
 	declare(strict_types=1);
 	
 	$parsed_url = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
@@ -25,16 +27,4 @@
 
 	$router->dispatch($parsed_url);	
 
-	/*
-	switch($parsed_url) {
-		case "/contact":
-			echo "this is the contact page";
-			break;
-		case "/login":
-			echo "this is the login page";
-			break;
-		default:
-			echo "page not found";
-	}
-	 */
 ?>
