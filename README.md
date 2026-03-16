@@ -38,5 +38,5 @@ make sure this is included in your .htaccess file
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [QSA,L]
+RewriteRule ^ <directory>/index_file [QSA,L]
 ```
